@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Pizza</title>
+
+    <!-- for adding external styleSheet -->
+    <link rel="stylesheet" href="index.css">
+
+    <!-- Linking Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        
+ </head>
+
+ <body>
+    
+    <!-- Wrapper class for each and every div -->
+    <div class="container">
+
+            <!-- form div -->
+            <div class="pizzaBooking">
+
+                <!-- heading div -->
+                <div class="heading"><h1>Order Pizza</h1></div>
+
+                <!-- form -->
+                <form onsubmit="return formValidate()" action="Welcome.html" class="form" name="myform"> 
+
+                    <!-- name of customer -->
+                    <div class="input">
+                        <label> Name </label><br>
+                        <input type="text" id="id-name" name="fName">
+                    </div> <br>
+                    
+                    <!-- address -->
+                    <div class="input">
+                        <label>Address</label><br>
+                        <input type="text" id="id-address" name="address">
+                    </div> <br>
+                    
+                    <!-- phoneNo -->
+                    <div class="input">
+                        <label>Phone</label><br>
+                        <input id="id-phone" name="phnum">
+                    </div> <br>
+                    
+                    <!-- email -->
+                    <div class="input">
+                        <label>Email</label><br>
+                        <input  id="id-email"  name="email">
+                    </div> <br>
+                    
+                    <!-- submit div-->
+                    <div class="submit"><button type="submit" class="btn btn-info"> Register </button></div>
+                    <br>
+                    <div class="submit"><button type="reset" class="btn btn-info"> Reset </button></div>
+            
+                </form>
+
+            </div>
+            
+    </div>
+    
+    <!-- for adding external js file -->
+    <script type="text/javascript" src="index.js"></script>
+
+ </body>
+</html>

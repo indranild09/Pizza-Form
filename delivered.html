@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delivered</title>
+    <!-- Linking Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+    <!-- ....adding style tag to styling the body.... -->
+    <style>
+        body{
+            background-image: url('pizza_1.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            color: rgb(0, 255, 179);
+            text-align: center;
+            font-size: larger;
+            font-weight: bolder;
+            font-family: Cambria;
+            font-size: 30px;
+        }
+    </style>
+<body class="container" id="enjoy" style="margin-top: 125px ;">
+    <strong><em>You can enjoy your Pizza Now!!</em></strong>
+    <br>
+    <strong><u>Customer details</u></strong></u>
+
+    <!--  -->
+    <div class="details" id="details" style="color: rgb(208, 255, 0) ;">
+         Your Details
+    </div>
+<br>
+
+    <!--  -->
+    <p><strong>Pizza Details</strong></p>
+    <div id="choice" style="color: rgb(212, 154, 204)">
+        Choices
+    </div>
+
+    <script>
+        window.localStorage.getItem('user');
+        var obj_user = JSON.parse(window.localStorage.getItem('user'))
+        document.getElementById("details").innerHTML= (`Name: ${obj_user.user_name} <br/> Delivery address: ${obj_user.user_address} <br/> Phone Number:  ${obj_user.user_phnum} <br/> Email Id:  ${obj_user.user_emailId} <br/> ` );
+
+    </script>
+    
+    <script>
+
+        window.localStorage.getItem('user1');
+        var obj_user1 = JSON.parse(window.localStorage.getItem('user1'));
+        document.getElementById("choice").innerHTML = (`Payment Method:  ${obj_user1.user1_payment} <br/> Type of Pizza:  ${obj_user1.user1_typeOfPizza} <br/> Size of Pizza:  ${obj_user1.user1_sizeOfPizza} <br/> Crust Type:  ${obj_user1.user1_crustType} `)
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+
+    <!-- ......linking css file and bootstrap for styling......-->
+    <link rel="stylesheet" href="welcome.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+       <div class="form" >
+
+            <!-- ....declaring form.... -->
+           <form onsubmit="return validityCheck()"  name="pizzaform" id="pizzaform" action="delivered.html" method="get">
+                <div class="input">
+                    <label>Payment Method</label>
+                    <select id="payment">
+                        <option value="">Choose Payment Options</option>
+                        <option value="Cash On Delivery">Cash On Delivery</option>
+                        <option value="Credit/Debit Card">Credit/Debit Card</option>
+                        <option value="Google Pay">Google Pay</option>
+                        <option value="Paytm UPI">Paytm UPI</option>
+                    </select>
+                </div>
+                <br>
+    
+                <!-- ....Pizza selection radio.... -->
+                <div class="input">        
+                    <fieldset id="pizzatype">
+                        <p>Pizza</p>
+                        <label> <input id="type1" name="pizzaType" type="radio" value="Simple Veg" "> Simple Veg  </label>
+            
+                        <label> <input id="type2" name="pizzaType" type="radio" value="Veg Supreme"  "> Veg Supreme </label>
+                    
+                        <label> <input id="type3" name="pizzaType" type="radio" value="Veg Delight"  "> Veg Delight </label>
+                    </fieldset>
+                </div> <br><br>
+                
+                <!-- ....Size of pizza radio.... -->
+                <div class="input">
+                    <fieldset>
+                        <p>Pizza Size</p>
+                        <label> <input id="id-Size1" name="pizzaSize" type="radio" value="Personal Pan"  > Personal Pan </label>
+                        <label> <input id="id-Size2" name="pizzaSize" type="radio" value="Medium"  > Medium </label>
+                        <label> <input id="id-Size3" name="pizzaSize" type="radio" value="Large"  > Large </label>
+                    </fieldset>
+                </div><br><br>
+        
+                <!-- ....Type of pizza radio.... -->
+                <div class="input">
+                    <fieldset>
+                        <p>Crust</p>
+                        <label> <input id="id-Crust1" name="crust" type="radio" value="Thin"  > Thin  </label>
+                        <label> <input id="id-Crust2" name="crust" type="radio" value="Normal"  > Normal </label>
+                        <label> <input id="id-Crust3" name="crust" type="radio" value="Large"  >  Special </label>
+                    </fieldset>
+                </div><br><br>
+               
+                <!-- ....Discount Coupons.... -->
+                <div class="input">
+                    <fieldset>
+                        <p>Do you have any coupon?</p>
+                        <label> <input id="coupons" name= "coupons" type="text" size="15" placeholder="Enter Coupon Code"> </label>
+                        
+                    </fieldset>
+                </div><br><br>
+            
+                <!-- ....Terms and Conditions.... -->
+                <div class="input">
+                    <fieldset>         
+                        
+                        <label> <input id="terms" type="checkbox" name="terms" id="terms"> I accept the <a href="#">Terms and Conditions</a> </label>
+                    </fieldset>
+                </div><br>
+
+                <!-- ....Submit and Reset.... -->
+
+                <div class="submit"><button type="submit" class="btn btn-primary" id="btn"> Submit </button></div>
+                <div class="submit"><button id = "reset" type="reset" class="btn btn-primary"> Reset </button></div>
+            </form>
+       </div> 
+    </div>
+
+   
+    <!-- adding javascript file -->
+    <script src="index.js"></script>
+</body>
+</html>

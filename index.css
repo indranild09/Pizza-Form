@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+*{
+    margin: auto;
+    padding: auto;
+   
+    background-attachment: fixed;
+    background-size: cover;
+    
+}
+
+body{
+    background-image: url('pizza_1.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: rgb(242, 250, 6);
+}
+
+#payment{
+    color: blueviolet;
+}
+
+
+.heading{
+    text-align: center;
+    color: #ffffff;
+}
+
+.pizzaBooking{
+    text-align: center;
+    color: rgba(229, 229, 229, 0.286);
+    font-size: larger;
+    font-weight: bolder;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+.form{
+    text-decoration: none;
+    
+    height: 25rem;
+    width: 30rem;
+}
+
+.form:hover{
+    background-color: transparent;
+    
+    transition: 0.5s;
+}
+
+input{
+   background-color: antiquewhite;
+   border-radius: 8px;
+   width: 15rem; 
+}
+
+.input{
+    color: #ffffff;
+    font-weight: bolder;
+    font-size: larger;
+}
+
+
+
+
+
+
+
+
+
+
+
+
